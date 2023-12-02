@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 130vw;
+    overflow-y: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+   height: 80%;
+}
+.panel{
+    margin: 10px;
+    border-radius: 30px;
+    width: 20vw;
+   position: relative;
+}
+.panel h3{
+    position: absolute;
+    top: 80%;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+    left: 5vw;
+}
+.panel-active{
+    margin: 10px;
+    border-radius: 30px;
+    width: 30vw;
+   position: relative;
+   transition: ease 0.5s;
+}
+.panel-active h3{
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    color: red;
+    text-shadow: 10px 10px 10px black;
+    left: 5vw;
+    font-size: 30px;
+    transition: ease 0.5s;
+}
